@@ -1,0 +1,44 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": true
+    },
+    "transform": {
+      "react": {
+        "development": true,
+        "pragma": "React.createElement",
+        "pragmaFrag": "React.Fragment",
+        "throwIfNamespace": true,
+        "useBuiltins": true
+      }
+    }
+  },
+  "swc-loader": {
+    "test": "\\.js$",
+    "loader": "@swc-loader",
+    "options": {
+      "jsc": {
+        "parser": {
+          "syntax": "ecmascript",
+          "jsx": true
+        },
+        "transform": {
+          "react": {
+            "development": true,
+            "pragma": "React.createElement",
+            "pragmaFrag": "React.Fragment",
+            "throwIfNamespace": true,
+            "useBuiltins": true
+          }
+        }
+      }
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "tailwindcss": {},
+      "autoprefixer": {}
+    }
+  }
+}

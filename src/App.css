@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background-color: #fff;
+  --text-color: #111;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: rgb(20, 20, 20);
+    --text-color: rgb(230, 230, 230);
+  }
+}
+
+body {
+  background-color: #f3fff4;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 20px;
+  border:1px solid rgba(192, 192, 192, 0.382);
+  border-radius:5px;
+}
+
+.btn:hover{
+  background-color: #bddeff;
+  border:1px solid #aad4fd;
+}
+
+.btn-primary {
+  background-color: #7ee285;
+  padding: 4px 10px;
+  color: white;
+  border: 1px solid #32ca39;
+}
+
+.btn-primary:hover {
+  background-color: #44d14b;
+}
+
+input {
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.form-field {
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+}
+
+.form-field label {
+  display:flex;
+  justify-content:center;
+  text-align: center;
+}
+
+.error-field input {
+  border: 1px solid red;
+}
+
+.error-text {
+  color: rgb(213, 32, 32);
+  font-size: 12px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
