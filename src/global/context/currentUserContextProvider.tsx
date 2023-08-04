@@ -29,6 +29,7 @@ const CurrentUserProvider = ({ children }: CurrentUserProviderProps) => {
   };
 
   const getUserData = async () => {
+    console.log(state.accessToken);
     try {
       const response = await fetch(`http://${VITE_BASE_API_URL}/v1/users`, {
         credentials: 'include',
